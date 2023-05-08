@@ -34,10 +34,10 @@ Feature_group = 2;                  %Feature group
 ```
 
 Next, the type of image that will be formed with the samples for the training of the CNN network is selected, of which there are four options: 
-1. Feature Image .- where the height of the image is the acquisition channels and the width are the features selected in the previous step. 
-2. MixChannel Image .- where the height of the image is the channels rearranged so that each channel is adjacent to all the others at some point, and the width is the selected features. 
-3. MixFeature Image .- where the height of the image is the acquisition channels and the width are the features rearranged so that each one is adjacent to all the others at some point. 
-4. MixImage .- where the height of the image is the rearranged channels and the width is the rearranged features.
+1. Feature Image, where the Image height is the number of acquisition channels, and the Image's width is the number of extracted features. 
+2. MixChannel Image, where the Image height is the number of channels rearranged with the algorithm of the previous section (SIS), and the Image's width is the number of extracted features. 
+3. MixFeature Image, where the Image height is the number of acquisition channels, and the Image's width is the number of features rearranged with the algorithm of the previous section (SIS2). 
+4. MixImage, where the Image height is the number of channels rearranged with the algorithm of the previous section (SIS), and the Image's width is the number of features rearranged with the algorithm of the previous section (SIS2).
 
 ```matlab
 image_type = 1;                     %Image type: 
@@ -335,11 +335,8 @@ for  k = 1:columns
 end
 ```
 ## Generate the images
-Finally, the set of images that can be used to train a convolutional neural network (CNN) is generated, the images are generated in individual folders for each movement, and the number of images depends on the number of samples that the database has for each movement. The user can select between 4 different types of images: 
-1. Feature Image, where the Image height is the number of acquisition channels, and the Image's width is the number of extracted features. 
-2. MixChannel Image, where the Image height is the number of channels rearranged with the algorithm of the previous section (SIS), and the Image's width is the number of extracted features. 
-3. MixFeature Image, where the Image height is the number of acquisition channels, and the Image's width is the number of features rearranged with the algorithm of the previous section (SIS2). 
-4. MixImage, where the Image height is the number of channels rearranged with the algorithm of the previous section (SIS), and the Image's width is the number of features rearranged with the algorithm of the previous section (SIS2).
+Finally, the set of images that can be used to train a convolutional neural network (CNN) is generated, the images are generated in individual folders for each movement, and the number of images depends on the number of samples that the database has for each movement, and on the type of image selected in the Parameter selection section.
+
 
 ```matlab
     file = ['Images_Features_Group_' num2str(Feature_group) '_Subject'  num2str(Subject_number)];  
