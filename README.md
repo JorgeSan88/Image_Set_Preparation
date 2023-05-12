@@ -391,6 +391,18 @@ It also returns a graph where one of the acquisition channels is shown with and 
 
 ![Graph a channel with and without filter](https://github.com/JorgeSan88/CNN_Preparation/blob/main/Graph%20a%20channel%20with%20and%20without%20filter.jpg)
 
+The main objective of the function is to generate a set of images in a central folder
+
+![Graph a channel with and without filter](https://github.com/JorgeSan88/CNN_Preparation/blob/main/Main%20folder.PNG)
+
+Other folders will be created within that folder, one for each movement
+
+![Graph a channel with and without filter](https://github.com/JorgeSan88/CNN_Preparation/blob/main/movement%20folders.PNG)
+
+And within each folder, the set of images corresponding to each movement and according to the selected parameters will be generated in such a way that this set of images separated by movement can be used for training a CNN
+
+![Graph a channel with and without filter](https://github.com/JorgeSan88/CNN_Preparation/blob/main/Images.PNG)
+
 
 
 
