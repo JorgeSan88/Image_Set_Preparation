@@ -365,5 +365,8 @@ CNN_preparation1(EMG,1,12,5,5,6,3,2000,4,4,200,100)
 ``` 
 ![Filter reponse](https://github.com/JorgeSan88/CNN_Preparation/blob/main/Filter%20reponse.jpg)
 
+![Graph a channel with and without filter](https://github.com/JorgeSan88/CNN_Preparation/blob/main/Graph%20a%20channel%20with%20and%20without%20filter.jpg)
+
+
 
 
