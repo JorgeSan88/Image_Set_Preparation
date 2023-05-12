@@ -354,16 +354,40 @@ Finally, the set of images that can be used to train a convolutional neural netw
             End = End + channels; 
         end 
     end 
-    ```
+```
 The folders will be saved in the directory where you are running this program and can be used to train any CNN structure.
 
 ## Example 
 The repository contains a sample signal inside the file called "Example_signal" The signal is stored in the EMG variable
 
+The parameters of the signal acquisition protocol in the example are:
+- subject_number = 1 
+- channels = 12 
+- Movements = 5 
+- seconds_per_move = 5 
+- repetitions = 6 
+- seconds_rest = 3 
+- sample_rate = 2000 
+
+And the group of features and the type of images selected were: 
+
+- feature_group = 4 
+- image_type = 4
+
+The selected window and overlap times were:
+
+- Time_window_length = 200;         
+- Time_overlap = 100;  
+
 ```matlab
 CNN_preparation1(EMG,1,12,5,5,6,3,2000,4,4,200,100)
 ``` 
+
+The function returns the graph of the response of the band pass and band reject filter, which as mentioned above, can be edited within the function
+
 ![Filter reponse](https://github.com/JorgeSan88/CNN_Preparation/blob/main/Filter%20reponse.jpg)
+
+It also returns a graph where one of the acquisition channels is shown with and without the digital filtering stage
 
 ![Graph a channel with and without filter](https://github.com/JorgeSan88/CNN_Preparation/blob/main/Graph%20a%20channel%20with%20and%20without%20filter.jpg)
 
