@@ -1,4 +1,4 @@
-# CNN_Preparation: preparation of an sEMG signal to train a CNN 
+# CNN_Preparation: A function to prepare a myoelectric signal to train a CNN 
 
 This repository contains the description of the function "CNNpreparation," a code that, from a myoelectric signal acquired with a specific protocol, prepares the samples of each movement to be classified to train a CNN. Each part of the function, called CNNpreparation, is described below.
 
