@@ -363,4 +363,7 @@ The repository contains a sample signal inside the file called "Example_signal" 
 ```matlab
 CNN_preparation1(EMG,1,12,5,5,6,3,2000,4,4,200,100)
 ``` 
+![Filter reponse](https://github.com/JorgeSan88/CNN_Preparation/blob/main/Filter%20reponse.jpg)
+
+
 
