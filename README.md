@@ -380,7 +380,7 @@ The selected window and overlap times were:
 - Time_overlap = 100;  
 
 ```matlab
-Image_Set_Preparation1(EMG,1,12,5,5,6,3,2000,4,4,200,100)
+Image_Set_Preparation(EMG,1,12,5,5,6,3,2000,4,4,200,100)
 ``` 
 The main objective of the function is to generate a set of images in a central folder
 
