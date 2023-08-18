@@ -1,13 +1,13 @@
-# Set_Image_Preparation: A function to prepare a myoelectric signal to train a CNN 
+# Image_Set_Preparation: A function to prepare a myoelectric signal to train a CNN 
 
-This repository contains the description of the function "Set_Image_Preparation," a code that, from a myoelectric signal acquired with a specific protocol, prepares the samples of each movement to be classified to train a CNN. Each part of the function, called CNNpreparation, is described below.
+This repository contains the description of the function "Image_Set_Preparation," a code that, from a myoelectric signal acquired with a specific protocol, prepares the samples of each movement to be classified to train a CNN. Each part of the function, called CNNpreparation, is described below.
 
 ##  Input arguments
 The signal must be recorded based on an acquisition protocol, where it is known how many acquisition channels there are, how many movements were made, how many repetitions of each movement were made, how long each repetition lasted, and also, each repetition must be interspersed by a rest time. 
 
 Syntax
 ```matlab
-Set_Image_Preparation(EMG,Subject_number,channels,Movements,Seconds_per_move,Repetitions,Seconds_rest,sample_rate,Feature_group,image_type,Time_window_length,Time_overlap) 
+Image_Set_Preparation(EMG,Subject_number,channels,Movements,Seconds_per_move,Repetitions,Seconds_rest,sample_rate,Feature_group,image_type,Time_window_length,Time_overlap) 
 ```
 * EMG - matrix  (The variable that contains the signal must be arranged like this: Rows are the number of channels, and Columns are the acquired data)
 * Subject - scalar (It is the number of subject under experiment, the file of the images generated at the end will have this number)
@@ -380,7 +380,7 @@ The selected window and overlap times were:
 - Time_overlap = 100;  
 
 ```matlab
-Set_Image_preparation1(EMG,1,12,5,5,6,3,2000,4,4,200,100)
+Image_Set_Preparation1(EMG,1,12,5,5,6,3,2000,4,4,200,100)
 ``` 
 The main objective of the function is to generate a set of images in a central folder
 
